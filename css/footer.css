@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+	Footer Style
+------------------------------------------------------------------------------*/
+/* Footer Style */
+footer
+{
+	position:absolute;
+	bottom: 0;													/* stick to bottom */
+	max-width: inherit;				 					/* max width */
+	min-width: 100%;										/* scale horiz. line */
+	border-bottom: 4px solid #2c2c2c;	 	/* gray bottom border */
+}
+/* Legal Style */
+#footer-legal span{
+	margin-right: 50px;
+}
+#footer-legal a{
+	text-decoration: none;
+}
+/* Pagination Styles */
+#footer-pagination{
+	float:right;
+}
+#footer-pagination a{
+	text-decoration: none;
+}
+/* If there is a older page, show arrow-to-left in black*/
+#pagination-next .fa{
+	min-width: 0px;
+	font-size: 24pt;
+	color: #2c2c2c;
+}
+/* If there is a newer page, show arrow-to-right in black*/
+#pagination-previous .fa{
+	margin-left: 50px;
+	font-size: 24pt;
+	color: #2c2c2c;
+}
+/* 1260px 960-Grid-System. This is used for screens smaller than 540px */
+@media only screen and (max-width: 540px){
+	#footer-legal span{
+		margin-right: 30px;
+	}
+	/* If there isa newer page, show arrow-to-right in black*/
+	#pagination-previous .fa{
+		margin-left: 40px;
+	}
+}

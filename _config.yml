@@ -1,0 +1,63 @@
+# General information
+title:       vRatpack   #HTML Title
+description: "A blog about enterprise technology"   #HTML Metadata "Description"
+
+# Owner Information
+owner:
+  name:      vratpack
+  avatar:    http://vratpack.com/assets/site/favicon/favicon-96x96.png
+  email:     contact@vratpack.com
+  twitter:   vratpack
+  github:    vratpack
+
+# Where Things Are
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+data_source: ./_data
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  authors:
+    output: true
+    permalink: /authors/:path/
+# Handling Reading
+safe:       true
+encoding:   "utf-8"
+include:    [".htaccess"]
+exclude:    [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+
+# Markdown Processor
+# We use redcarpet. Details on https://github.com/vmg/redcarpet
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "footnotes", "highligh", "quote", "underline", "tables"]
+
+#Highlighter
+# We use  pygments with css customization
+highlighter: pygments
+
+# Outputting
+#Change to localhost:4000 when working local
+url: http://vratpack.com
+#url: http://localhost:4000
+permalink:     date
+timezone:      Europe/Berlin
+paginate:      5
+paginate_path: blog/page:num/
+
+# Addons
+# Disqus Comments
+disqus_shortname: vratpackcom
+# Google Analytics
+google_analytics: UA-59824330-1
+#Google Webmaster Tools Verification (req. for Google Search and others)
+google_verify: xb7c_fSQqoYt_bgKOkgzmBoqRo04gIrZFEsUge2WNCY
+#Google Custom Search
+google_cse: 012058144885453063045:j06vasd7ins

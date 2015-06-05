@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Additional Stylesheets -->
+<link rel="stylesheet" href="{{ site.url }}/css/author.css" />
+<html>
+<!-- TODO Setup Single-Author Layout -->
+<head>
+	{% include head.html %}
+</head>
+<body>
+		<div id="container">
+				<div class="author-top">
+					<!-- Author name -->
+					<h2><span style="min-width: 32px;"></span>{{ page.name }}</h2>
+				</div>
+				<div class="author-wrapper">
+					<div class="author-left">
+						<img class="author-img" style="background-image: url({{ site.url }}/assets/authors/{{ page.image }});"></img>
+					</div>
+					<div class="author-right">
+						<div class="author-about">{{ content }}</div>
+
+						<div class="author-social">
+							{% if page.github != empty %}
+								<a id="author-github-link" href="https://github.com/{{ page.github }}" class="fa fa-github-square author-social-item" ></a>
+							{% endif %}
+
+							{% if page.twitter != empty %}
+								<a id="author-twitter-link" href="https://twitter.com/{{ page.twitter }}" class="fa fa-twitter-square author-social-item" ></a>
+							{% endif %}
+
+							{% if page.linkedin != empty %}
+								<a id="author-linkedin-link" href="https://www.linkedin.com/profile/view?id={{ page.linkedin }}" class="fa fa-linkedin-square author-social-item" ></a>
+							{% endif %}
+
+							{% if page.xing != empty %}
+								<a id="author-xing-link" href="https://www.xing.com/profile/{{ page.xing }}" class="fa fa-xing-square author-social-item" ></a>
+							{% endif %}
+
+							<a id="author-posts-link" href="/blog/tag/{{ page.tag }}/" class="fa fa-pencil-square author-social-item"></a>
+						</div>
+					</div>
+				</div>
+		</div>
+</body>
+</html>

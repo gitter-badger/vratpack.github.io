@@ -1,0 +1,30 @@
+<!-- Additional Stylesheets -->
+<link rel="stylesheet" href="{{ site.url }}/css/footer.css" type="text/css" />
+<footer>
+	<span id="footer-legal">
+			<span><a href="/legal/imprint.html">imprint</a></span>
+			<span><a href="/legal/privacy.html">privacy</a></span>
+	</span>
+	{% if paginator %}
+	<!-- Pagination links -->
+			<span id="footer-pagination">
+					{% if paginator.next_page %}
+							<a href="/blog/page{{paginator.next_page}}" id="pagination-next">
+									<span class="fa fa-backward"></span>
+							</a>
+					{% endif %}
+
+					{% if paginator.previous_page %}
+						{% if paginator.page == 2 %}
+							<a href="/" id="pagination-previous">
+									<span class="fa fa-forward" >
+							</span></a>
+						{% else %}
+							<a href="/blog/page{{paginator.previous_page}}" id="pagination-previous">
+									<span class="fa fa-forward"></span>
+							</a>
+						{% endif %}
+					{% endif %}
+			</span>
+	{%	endif %}
+</footer>

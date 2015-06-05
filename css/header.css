@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------------------
+	Header Style
+------------------------------------------------------------------------------*/
+/* Header */
+header {
+	margin: auto auto;
+	max-width: inherit;
+	text-align: center;
+}
+/* Navigation Bar */
+#header-nav {
+	margin: 0;
+	padding: 12px 0 10px 0;
+	list-style-type: none;
+	line-height: 30px;
+	border-bottom: 1px solid #dfe4ea;
+}
+/* Navigation Elements */
+#header-nav ul {
+
+}
+#header-nav li {
+	margin: 0 20px;
+	display: inline-block;
+	font-variant:small-caps;
+	font-size: 20px;
+	font-weight: 720;
+}
+#header-nav li :before {
+	content: '';
+	content: none;
+}
+#header-nav a {
+	text-decoration: none;
+}
+
+
+/* Blog Logo Circle */
+#header-logo {
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	line-height:50px;
+	text-align:center;
+	color:#ffffff;
+	background:#2c2c2c;
+	box-shadow: 2px 2px 7px #888888;
+}
+
+#header-separator {
+	height:0.5px;
+	background:#787878;
+	border-bottom:0.5px solid #c7c7c7;
+}
+
+/* 1260px 960-Grid-System. This is used for screens smaller than 540px */
+@media only screen and (max-width: 540px){
+	#header-nav {
+		position: relative;
+	}
+	#header-nav li {
+		margin: 0 5px;
+		font-size: 18px;
+	}
+	#header-logo
+	{
+		width:40px;
+		height:40px;
+		line-height:40px;
+	}
+}

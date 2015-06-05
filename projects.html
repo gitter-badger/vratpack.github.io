@@ -1,0 +1,33 @@
+---
+layout: default
+title: "vRatpack - Projects"
+permalink: /projects/
+---
+<!-- TODO Setup Projects-Page Layout -->
+<div class="listing">
+		{% if site.projects != empty %}
+				{% for project in site.projects %}
+				<div class="post other">
+					<h1 class="post-title"><a href="{{project.url}}">{{ project.title }}</a></h1>
+					<h2 class="post-title">
+						<p class="post-date">{{ project.date | date_to_string }}</p>
+					</h2>
+
+          <div>
+					<p>{{ project.description }}</p>
+          </div>
+
+          <div>
+					{%if project.github.link %}
+						<p class="project-github-link"></p>
+					{% endif %}
+          </div>
+
+				</div>
+				{% endfor %}
+		{% else %}
+				<div class="post other">
+					<h2>Sorry - no projects yet.</h2>
+				</div>
+		{% endif %}
+</div>

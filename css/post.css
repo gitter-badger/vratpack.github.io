@@ -1,0 +1,87 @@
+/*------------------------------------------------------------------------------
+  Posts Style
+------------------------------------------------------------------------------*/
+/*------------------------------------------------------
+  Post title style
+--------------------------------------------------------*/
+/* Post Heading */
+h1.post-title {
+	margin: 16px 0 0 0;   /* Change margin for title h1*/
+  padding-bottom: 0;    /* Change padding for title h1*/
+  padding-top: 10px;    /* Change padding for title h1*/
+}
+
+h2.post-title {
+	padding: 0 0 20px 0;   /* Change bottom padding for title h2*/
+	font-size: 14px;
+	font-weight: normal;
+}
+/* Heading Post Date */
+p.post-date {
+	color: #aaaaaa;
+  display: inline-block;
+}
+/* Heading Author Name */
+p.post-author{
+  display: inline-block;
+}
+/*------------------------------------------------------
+  Post content style
+--------------------------------------------------------*/
+/* Links in post-content */
+.post-content a:active, .post-content a:link, .post-content a:visited, .post-content a:hover{
+	text-decoration: underline;
+}
+/* But not in superscript / subscript */
+.post-content sup a, .post-content sup a:active, .post-content sup a:link, .post-content sup a:visited, .post-content sup a:hover,
+.post-content sub a, .post-content sup a:active, .post-content sup a:link, .post-content sup a:visited, .post-content sup a:hover{
+	text-decoration: none;
+}
+.post-content
+{
+	color: #202020;
+}
+.post-content th {
+	border-bottom: 1px dotted #ddd;
+	border-left: 1px dotted #ddd;
+	border-right: 1px dotted #ddd;
+}
+.post-content td {
+	border-left: 1px dotted #ddd;
+	border-right: 1px dotted #ddd;
+}
+/* TODO finalize */
+/* 1260px 960-Grid-System. This is used for screens smaller than 540px */
+@media only screen and (max-width: 540px){
+	h1 {
+	font-size: 30px;
+	line-height: 1.0;
+	letter-spacing: 0;
+	}
+.post-content {
+	width: 100% !important;
+	}
+}
+/* Links in post-content footnotes */
+.footnotes a:active, .footnotes a:link, .footnotes a:visited, .footnotes a:hover{
+	text-decoration: none;
+}
+/*------------------------------------------------------
+  Post ending style
+--------------------------------------------------------*/
+/* Social media offset from post-content */
+.social{
+  margin: 60px 0 0 0;
+}
+/* Twitter Link  */
+#post-tweetlink{
+  margin: 0 20px 0 0;
+	color: #000;
+}
+/* Post Tags */
+.post-tags p{
+  display: inline-block;
+}
+#disqus_thread{
+  margin: 10px 0 0 0;
+}

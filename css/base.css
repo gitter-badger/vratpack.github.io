@@ -1,0 +1,380 @@
+/*----------------------------------------------------------------------------
+	Global Reset
+----------------------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #000;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+/*----------------------------------------------------------------------------
+	Default Layout
+----------------------------------------------------------------------------*/
+html {
+	height: 100%;					/* required for footer */
+	min-width: 320px;	 		/* min supported responsive size */
+}
+body {
+	font-family: "Lato", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.4;
+	height: 100%;								/* required for footer */
+	min-height: 100%;						/* required for footer */
+	max-width: 720px;						/* max site width */
+	margin: 0 auto;							/* center */
+	border-top: solid #2c2c2c;
+}
+/* Default Layout-Container
+	<div id="layout-container">
+		<header></header>
+		<div class="content"></div>
+		<footer></footer>
+	</div>
+*/
+div#layout-container {
+	position:relative;				/* needed for footer positioning*/
+	max-width: inherit;
+	height:auto !important;		/* real browsers */
+	height:100%;				 			/* IE6: treaded as min-height*/
+	min-height:100%;					/* real browsers */
+}
+/* Content-Container*/
+div#content-container {
+	position: relative;
+	margin: 0 auto;
+	max-width: inherit;
+	height: auto;							/* required for footer */
+	min-height:100%;					/* required for footer */
+	padding-bottom: 40px; 		/* gap to footer */
+}
+
+/*------------------------------------------------------------------------------
+	Global Style - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+------------------------------------------------------------------------------*/
+/*------------------------------------------------------
+  HTML Content sectioning
+--------------------------------------------------------*/
+h1{
+	padding: 1.5em 0 0.75em 0;
+	font-size: 25px;
+	font-weight: bold;
+	color: #333;
+}
+h2{
+	padding: 1.0em 0 0.75em 0;
+	font-size: 22px;
+	font-weight: bold;
+	color: #333;
+}
+h3{
+	padding: 0.75em 0 0.75em 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+h4{
+	padding: 0.75em 0 0.75em 0;
+	font-size: 20px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #333;
+}
+h5{
+	padding: 0.75em 0 0.5em 0;
+	font-size: 20px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #333;
+}
+h6{
+	padding: 0.75em 0 0.25em 0;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: italic;
+	color: #333;
+}
+/*------------------------------------------------------
+  HTML Text content
+--------------------------------------------------------*/
+/* Word definition block */
+dl{
+	margin: 1.0em 0;
+}
+/* Word to define */
+dt{
+	font-weight: bold;
+}
+/* Word definition */
+dl{
+	font-style: italic;
+}
+/* Simple paragraph */
+p{
+	padding: 0 0 0.25em 0;
+}
+blockquote {
+	margin: 1.0em 0;
+	padding: 0 0 0 15px;
+	font-size: 16px;
+	border-left: 2px solid #aaa;
+}
+blockquote p {
+	margin: 12px 0;
+	color: #aaa;
+}
+/* Quote within blockqute */
+blockquote q {
+	quotes: none;
+}
+/* horizontal rule */
+hr {
+	color: #ddd;
+	height:0.25px;
+	background:#787878;
+	border-bottom:0.25px solid #c7c7c7;
+}
+/* Preformatted text */
+pre {
+	font-family: 'Source Code Pro';
+	margin: 1em 0px;
+}
+/* unordnered list */
+ul
+{
+	list-style-type: square;
+	margin: 0 0 0 2em;
+}
+/* ordered list */
+ol
+{
+	list-style-type: decimal;
+	margin: 0 0 0 2em;
+}
+figure {
+	margin: 1em 0 1em 0;
+	padding: 2px;
+	border: 1px solid #ddd;
+	line-height: 1em;
+}
+figure img {
+	max-width: 100%;
+}
+figcaption{
+	font-size: 0.75em;
+	font-style: italic;
+}
+/*------------------------------------------------------
+  HTML Inline text semantics
+--------------------------------------------------------*/
+/* single line quote style */
+q{
+	quotes: "«" "»" "<" ">";
+}
+/* small text - e.g. for legal */
+small{
+	font-size: 0.75em;
+}
+/* superscript */
+sup{
+	font-size: 0.75em;
+	line-height: 2em;
+	vertical-align: super;
+}
+/* subscript */
+sub{
+	font-size: 0.75em;
+	line-height: 2em;
+	vertical-align: sub;
+}
+/* Links global */
+a, a:link, a:active, a:visited, a:hover{
+		text-decoration: none;
+		color: inherit;
+}
+/* Basic formatting */
+strong, b {font-weight: bold;}
+em, i{font-style: italic;}
+u{text-decoration: underline;}
+del, s{text-decoration: line-through;}
+/* Code and pre are defined in syntax.css */
+/* Highlighted text */
+mark{
+	background-color: #f5f2f0;
+}
+/* Variable, time, sample-console-output and keyboard-input style */
+var, time, samp, kbd{
+	font-family: 'Source Code Pro';
+}
+/*------------------------------------------------------
+  HTML Image and multimedia
+--------------------------------------------------------*/
+/* Images */
+img {
+	max-width: 100%;
+}
+/* Linked images in posts */
+p > a > img {
+	max-width: 100%;
+}
+/*------------------------------------------------------
+  HTML Embedded content
+--------------------------------------------------------*/
+/* Responsive embedded content */
+iframe, embed, object, source, object {
+	display: block !important;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+	padding: 0;
+  border: 0;
+}
+/*------------------------------------------------------
+  HTML Table content
+--------------------------------------------------------*/
+table {
+	width: 100%;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	color: inherit;
+	background: inherit;
+	font-size: 0.85em;
+}
+caption {
+	padding: 10px 10px 5px 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+th {
+	text-align: left;
+	padding: 5px;
+}
+td {
+	text-align: left;
+	padding: 5px 5px;
+}
+tr{
+}
+table.data th, table.data td{
+	text-align: left;
+}
+/*------------------------------------------------------------------------------
+	Listing Style
+------------------------------------------------------------------------------*/
+/* TODO finalize */
+h1.post-title{
+	padding-top: 10px;
+	margin-top: 0;
+	padding-bottom: 0;
+}
+h2.post-subhead {
+	padding: 0 0 20px 0;		 					/* Change bottom padding for title h2*/
+	font-size: 14px;
+	font-weight: normal;
+}
+/* Subheading */
+.post-subhead p, .post-subhead a{
+		color: #aaa;
+		display: inline-block;
+}
+/* Subheading Post Date */
+p.post-date {
+}
+/* Subheading Author Name */
+p.post-author{
+}
+/* A single post listing*/
+.listing .post {
+	margin: 40px 0;
+}
+
+/* First post listing margin */
+.listing .post:first-child {
+	margin-top: 16px;
+}
+
+/* A single project listing */
+.listing .project {
+	margin: 40px 0;
+}
+
+/* First project listing margin */
+.listing .project:first-child {
+	margin-top: 22px;
+}
+/*------------------------------------------------------------------------------
+	Post-Content Style
+	used for post-content, project-content and listing-post-excerpt
+------------------------------------------------------------------------------*/
+/* Footnotes show up on listing page if they exist within the first paragraph */
+/* Footnote horizontal line */
+.footnotes hr {
+	margin: 10px 0 0 0;
+	color: #ddd;
+	height: 0.25px;
+	background:#787878;
+	border-bottom:0.25px solid #c7c7c7;
+	max-width: 50%;
+}
+/* Footnote ordered list */
+.footnotes ol
+{
+	list-style-type: decimal;
+	margin: 0 0 0 1.5em;
+}
+/* Footnote list elements */
+.footnotes li {
+	font-size: 0.75em;
+  font-style:italic;
+}
+
+
+
+/* TODO sort out to seperate css file */
+/* Tag listing page items */
+div .tag-listing-title{
+	display: block;
+	margin-bottom: 1em;
+	font-size: 1.25em;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- Additional Stylesheets -->
+<html>
+<head>
+	{% include head.html %}
+</head>
+<body>
+		<div id="layout-container">
+				{% include header.html %}
+				<div id="content-container">
+						{{ content }}
+				</div>
+				{% include footer.html %}
+		</div>
+</body>
+</html>

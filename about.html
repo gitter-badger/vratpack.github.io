@@ -1,0 +1,21 @@
+---
+layout: default
+title: "vRatpack - About"
+permalink: /about/
+---
+<!-- TODO Setup Authors-Page Layout -->
+<h1>About</h1>
+<p>This page lists all active authors of {{ site.title }}.</p>
+<div class="listing">
+    {% if site.authors != empty %}
+        {% for author in site.authors %}
+        <div class="post other link">
+          <p>{{ author.output }}</p>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="post other link">
+          <h2>Sorry - no authors yet.</h2>
+        </div>
+    {% endif %}
+</div>
