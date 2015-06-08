@@ -1,8 +1,49 @@
-- slug: vmware
-  name: vmware
+# Authors
 - slug: author-rszy
   name: rszy
 - slug: author-chk
   name: chk
 - slug: author-chl
   name: chl
+
+ # VMware Products
+- slug: esxi
+  name: vSphere ESXi
+- slug: vcenter
+  name: vSphere vCenter
+- slug: vra
+  name: vRealize Automation
+- slug: vro
+  name: vRealize Orchestrator
+- slug: vrops
+  name: vRealize Operations
+- slug: vrb
+  name: vRealize Business
+- slug: nsx
+  name: VMware NSX
+- slug: vsan
+  name: Virtual SAN
+- slug: vvol
+  name: Virtual Volumes
+
+# Other Datacenter Technologies
+- slug: docker
+  name: Docker
+- slug: coopto
+  name: Coopto
+- slug: photon
+  name: VMware Photon
+
+# Vendors
+- slug: vmware
+  name: VMware
+- slug: veeam
+  name: Veeam
+- slug: emc
+  name: EMC
+- slug: netapp
+  name: NetApp
+- slug: ibm
+  name: IBM
+- slug: cisco
+  name: Cisco

@@ -14,7 +14,9 @@ title: "vRatpack - Blog"
         {% endif %}
       </h2>
       <div class="post-excerpt">
-        {{ post.excerpt }}
+        <!-- Don't use excerpt {{ post.excerpt }} -->
+        {{ post.content | strip_html | truncatewords:75}}
+        <a href="{{post.url}}" style="font-weight:bold;">[read on]</a>
       </div>
     </div>
     {% endfor %}
