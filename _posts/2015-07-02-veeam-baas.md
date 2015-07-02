@@ -37,10 +37,8 @@ But adding a REST Host is - if everything works fine - as easy as these screensh
 
 In vRealize Orchestrator Client navigate to *Workflows - Library - HTTP-REST - Configuration - Add a REST host* and start the workflow.
 
-<figure>
+
   ![HandsOn: Veeam - Backup-as-a-Service in vRealize Automation](http://www.vratpack.com/assets/posts/2015-07-02-veeam-baas/my311de-15.01.2015-13.52.10.png)
-  <figcaption>Fig 1. Add a REST Host to vRO Inventory</figcaption>
-</figure>
 
 Please verify you're Veeam Hosts URL and REST Port. By default HTTP protocol port 9399 is used and for HTTPS protocol, port 9398 is used.
 
