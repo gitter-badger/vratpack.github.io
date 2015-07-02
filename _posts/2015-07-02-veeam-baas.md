@@ -3,7 +3,7 @@ layout: post
 title: "HandsOn: Veeam - Backup-as-a-Service in vRealize Automation"
 date: 2015-07-02 08:00:00
 comments: true
-tags: [author-chk]
+tags: [author-chk, vra, vro, veeam, vmware]
 author:
     name: "Christian Klose"
     twitter: "christianklose"
