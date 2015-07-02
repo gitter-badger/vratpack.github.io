@@ -9,4 +9,5 @@ xing: "Christian_Klose3"
 tag: "author-chk"
 ---
 <!-- Max. 200 char. about the author -->
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+Christian works as Senior Consultant for Fritz & Macziol GmbH and is focused on VMware Cloud Automation and Management products.
+Christian also writes in german language on his personal blog my311.de 
