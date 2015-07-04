@@ -66,8 +66,8 @@ at the bottom of your post tags would be displayed like this:
 ![tags](/assets/site/readme/tags.png)
 
 and your post would be listed on the tags pages e.g.
-- `http://vratpack.com/blog/tag/testtag-1/`
-- `http://vratpack.com/blog/tag/testtag-2/`
+- `https://vratpack.com/blog/tag/testtag-1/`
+- `https://vratpack.com/blog/tag/testtag-2/`
 
 As you may have noticed, the url path to the tag is not the same as the tag display name. This is controlled within the [tags data file](https://github.com/vratpack/vratpack.github.io/blob/master/_data/tags.yml).
 In fact, if you want to create a new tag that was never used before, you **first have to create it** within the [tags data file](https://github.com/vratpack/vratpack.github.io/blob/master/_data/tags.yml).
@@ -228,7 +228,7 @@ will result in
 ![gist](/assets/site/readme/gist.png)
 
 ###Images
-If you want to post images, create a subfolder within the `/assets/posts/` folder and puts your images in there, e.g.: `/assets/posts/YYYY-MM-DD-your-post-title-seperated-by-hyphens/image.png`.
+If you want to post images, create a subfolder within the `/assets/posts/` folder and puts your images in there, e.g.: `/assets/posts/YYYY-MM-DD-your-post-title-seperated-by-hyphens/image.png`. You shouldn't use full qualified URL paths to the image because if we ever change domains, the links will be broken. However: if for whatever reason you choose to include content using the full URL path, e.g. using external images, make sure to use *https://* instead of *http://* because otherwise the browser will display certificate warnings to the user when loading the non-secure content over a secure connection.
 The syntax for including images is default Markdown:
 
 ```
