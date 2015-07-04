@@ -5,7 +5,7 @@ description: "A blog about enterprise technology"   #HTML Metadata "Description"
 # Owner Information
 owner:
   name:      vratpack
-  avatar:    http://vratpack.com/assets/site/favicon/favicon-96x96.png
+  avatar:    https://vratpack.com/assets/site/favicon/favicon-96x96.png
   email:     contact@vratpack.com
   twitter:   vratpack
   github:    vratpack
@@ -45,7 +45,7 @@ highlighter: pygments
 
 # Outputting
 #Change to localhost:4000 when working local
-url: http://vratpack.com
+url: https://vratpack.com
 #url: http://localhost:4000
 permalink:     date
 timezone:      Europe/Berlin
