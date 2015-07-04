@@ -7,8 +7,8 @@ tags: [author-chk, vra, vro, veeam, vmware]
 author:
     name: "Christian Klose"
     twitter: "christianklose"
-description: "Last week i prepared a use case for some customer presentations about Backup as a Service using Veeam B&R v8. I know about the Veeam REST API which is available for Version 8 with Veeam Enterprise Manager. I also know about the Powershell implementations but hey - i love VMware so i build solutions in Orchestrator :-) and decided to test drive some use case workflows in vRealize Orchestrator and also bind them to vRealize Automation."
 excerpt_separator: <!--more-->
+description: ""
 ---
 
 This is a use case description for some customer presentations about Backup as a Service using [Veeam B&R v8](http://www.veeam.com/de/vm-backup-recovery-replication-software.html). This article was originally posted January 2015 on [my311.de](http://my311.de/).
