@@ -11,10 +11,9 @@ excerpt_separator: <!--more-->
 ---
 
 
+[Robert Szymczak](https://vratpack.com/about/) created a Plug-In for VMware vRealize Orchestrator which should help Administrators and Users to easily deploy and manage Docker Instances, Containers and Nodes on VMware Infrastructure. The project is open source and is located on [GitHub](https://github.com/m451/coopto)  and there is also a [ReadMe](https://github.com/m451/coopto/blob/master/README.md) and a [Wiki](https://github.com/m451/coopto/wiki)  available. You could also download it as a vRealize Orchestrator Package from VMware Solution Exchange [here](https://solutionexchange.vmware.com/store/products/coopto-a-docker-plug-in-for-vmware-vrealize-orchestrator--2).
 
 <!--more-->
-
-[Robert Szymczak](https://vratpack.com/about/) created a Plug-In for VMware vRealize Orchestrator which should help Administrators and Users to easily deploy and manage Docker Instances, Containers and Nodes on VMware Infrastructure. The project is open source and is located on [GitHub](https://github.com/m451/coopto)  and there is also a [ReadMe](https://github.com/m451/coopto/blob/master/README.md) and a [Wiki](https://github.com/m451/coopto/wiki)  available. You could also download it as a vRealize Orchestrator Package from VMware Solution Exchange [here](https://solutionexchange.vmware.com/store/products/coopto-a-docker-plug-in-for-vmware-vrealize-orchestrator--2).
 
 # Install to Demo Environment
 
