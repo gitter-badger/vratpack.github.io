@@ -26,13 +26,15 @@
 - slug: vvol
   name: Virtual Volumes
 
-# Other Datacenter Technologies
+# Other Datacenter Technologies & Products
 - slug: docker
   name: Docker
 - slug: coopto
   name: Coopto
 - slug: photon
   name: VMware Photon
+- slug: macosx
+  name: Mac OS X
 
 # Vendors
 - slug: vmware
@@ -47,3 +49,5 @@
   name: IBM
 - slug: cisco
   name: Cisco
+- slug: apple
+  name: Apple
