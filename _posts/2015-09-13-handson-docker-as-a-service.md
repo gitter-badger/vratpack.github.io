@@ -21,7 +21,11 @@ I have successfully installed the PlugIn and the Package File and i have a Docke
 
 But you can use any other OS or Docker distribution. Install instructions are available at [docker.com](https://docs.docker.com/installation/)
 
-Check your version of Docker by typing ***docker version***
+Check your version of Docker by typing
+
+```bash
+docker version
+```
 
 ![Image of Docker Version](/assets/posts/2015-09-13-handson-docker/05-01-_2015_16-12-19.png)
 
@@ -52,7 +56,13 @@ After successful Workflow run check the vRO Inventory Tab and expand the Coopto 
 
 As you can see in the screenshot the Node was added and it scans for existing Docker Images on that Host which are shown under the Host in the Inventory.
 
-By simply running ***docker images*** on the Docker Host you can double-check the downloaded Images.
+By simply running
+
+```bash
+docker images
+```
+
+on the Docker Host you can double-check the downloaded Images.
 
 ![Coopto - Docker Plugin for vRealize Orchestrator](/assets/posts/2015-09-13-handson-docker/05-01-_2015_16-46-18.png)
 
