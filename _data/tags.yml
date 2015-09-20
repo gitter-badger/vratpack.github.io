@@ -35,6 +35,8 @@
   name: VMware Photon
 - slug: macosx
   name: Mac OS X
+ - slug: puppet
+  name: Puppet
 
 # Vendors
 - slug: vmware

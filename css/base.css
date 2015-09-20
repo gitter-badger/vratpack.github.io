@@ -251,6 +251,7 @@ var, time, samp, kbd{
 img {
 	max-width: 100%;
 }
+
 /* Linked images in posts */
 p > a > img {
 	max-width: 100%;
