@@ -36,6 +36,7 @@ author:
     name: "Author Display Name"
     twitter: "TwitterAccountName"
 description: "Description Of This Post"
+excerpt_separator: <!--more-->
 ---
 ```
 
@@ -245,5 +246,10 @@ The image will auto-scale to fit the pages width, which is fixed to 720 pixel. I
 will result in:
 
 ![yaktocat](/assets/site/readme/yaktocat.png)
+
+
+###Excerpt
+By default Jekyll will take the first paragraph as an excerpt of the post for the post index page. Using the **excerpt_separator** Front Matter you can put a little more control what part of your post to use as excerpt. E.g. if you use **excerpt_separator: <!--more-->** you can then just start writing your post and anywhere in your post write the <!--more--> tag to seperate excerpt from the rest of your post. The text before the excerpt separator will be used as excerpt.
+
 
 That's it for now. As features may follow, thus guide will be updated.
