@@ -239,7 +239,7 @@ The syntax for including images is default Markdown:
 The image will auto-scale to fit the pages width, which is fixed to 720 pixel. If you want to use caption on your figures, you may use inline HTML to do so, e.g.:
 
     <figure>
-      ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+	  <img src="https://octodex.github.com/images/yaktocat.png">
       <figcaption>Fig 1. the honorable Yaktocat. [GitHub](https://www.github.com))</figcaption>
     </figure>
 

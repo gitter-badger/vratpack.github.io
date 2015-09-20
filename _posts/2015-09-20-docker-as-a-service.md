@@ -26,7 +26,7 @@ But running both technologies in parallel is expensive and Docker, compared to v
 In the following we'll show you how to run container services within your companies existing VMware infrastructure and combine both technologies in a meaningful way.
 
 <figure>
-  ![Only one example of combining both technologies: scale-out and maintenance without downtimes](https://vratpack.com/assets/posts/2015-09-20-docker-as-a-service/scale.png)
+  <img src="/assets/posts/2015-09-20-docker-as-a-service/scale.png" >
   <figcaption>Fig 1. Only one example of combining both technologies: scale-out and maintenance without downtimes</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Next you'll have to download the Coopto plug-in from [VMware Solution Exchange](
 So you got Orchestrator running and the plug-in installed. Coopto with all of it's workflows should be visible in the client's workflow tab at *Library/Coopto*.
 
 <figure>
-  ![The Docker plug-in for vRealize Orchestrator appears at Library/Coopto](https://vratpack.com/assets/posts/2015-09-20-docker-as-a-service/plugin-workflows.png)
+  <img src="/assets/posts/2015-09-20-docker-as-a-service/plugin-workflows.png" >
   <figcaption>Fig 2. The Docker plug-in for vRealize Orchestrator appears at Library/Coopto</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ The second step is to create a container from the image and is done using the *C
 The thrid and last step is to actually start the container. Run the *Containers/Start Container* workflow using the container created earlier as input object to do so. Leave all other options to their defaults and execute the workflow. If you now change to the inventory tab of your Orchestrator client you should find your Photon host and the container running inside of it listed below the Coopto plug-in.
 
 <figure>
-  ![The inventory tab shows the current Docker configuration](https://vratpack.com/assets/posts/2015-09-20-docker-as-a-service/plugin-inventory.png)
+  <img src="/assets/posts/2015-09-20-docker-as-a-service/plugin-inventory.png" >
   <figcaption>Fig 3. The inventory tab shows the current Docker configuration</figcaption>
 </figure>
 
@@ -102,14 +102,14 @@ If you look into the *Sandbox* folder within Coopto's workflows directory you'll
 vRealize Orchestrator is a management tool to build any service, so called XaaS, in VMware. With a little help of plug-ins it's possible to build Docker-As-A-Service workflows this way. In order to provide those services to your users your best bet is VMware's self-service portal vRealize Automation. You can provide all services build in vRealize Orchestrator in vRealize Automation's web-portal and even add granular access rights and approval policies to those services. The component used there is the [Advanced Service Designer](http://pubs.vmware.com/vra-62/index.jsp?topic=%2Fcom.vmware.vra.asd.doc%2FGUID-EB8CCBE0-405D-43C9-9D12-209E56DD6CC0.html), which will trigger the Orchestrator workflows and request required parameters from the user.
 
 <figure>
-  ![Within vRealize Automation users can request containers and other services as-a-service](https://vratpack.com/assets/posts/2015-09-20-docker-as-a-service/vra-integration.png)
+  <img src="/assets/posts/2015-09-20-docker-as-a-service/vra-integration.png">
   <figcaption>Fig 4. Within vRealize Automation users can request containers and other services as-a-service</figcaption>
 </figure>
 
 If vRealize Automation is something you don't have yet you can also use the vSphere Web-Client to make workflows available for end users (althought, as you can imagine, the feature set is limited here). vSphere Administrators can then use the same UI to provision virtual machines as well as containers.
 
 <figure>
-  ![Workflows built in vRealize Orchestrator can also be executed from your vSphere Web-Client](https://vratpack.com/assets/posts/2015-09-20-docker-as-a-service/vcsa-integration.png)
+  <img src="/assets/posts/2015-09-20-docker-as-a-service/vcsa-integration.png" >
   <figcaption>Fig 5. Workflows built in vRealize Orchestrator can also be executed from your vSphere Web-Client</figcaption>
 </figure>
 
